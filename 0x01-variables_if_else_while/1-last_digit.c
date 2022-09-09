@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *  * main - print the last digit of a number.
- *   *
- *    * Return: always 0 (Success)
- *     */
+ * main - print the last digit of a number.
+ *
+ * Return: always 0 (Success)
+ */
 int main(void)
 {
 int n;
