@@ -1,38 +1,41 @@
 #include <stdio.h>
-
+#define LARGEST 10000000000
 /**
- * main - check the code for alx School students.
- *
- * Return: Always 0.
+ * main - main block
+ * Description: Find and print the first 98 fib numbers starting with 1 and 2.
+ * Numbers should be separated by coma and space.
+ * Return: 0
  */
 int main(void)
 {
-int i;
-/* long int pf, af, f, f1, f2, f3;*/
-unsigned long f, pf, af ;
+unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
+unsigned long int hold1, hold2, hold3;
+int count;
 
-pf = 1;
-af = 2;
-printf("1, ");
-printf("2, ");
-for (i = 0; i < 96; i++)
+printf("%lu, %lu, ", bk1, bk2);
+for (count = 2; count < 98; count++)
 {
-f = pf + af;
-pf = af;
-af = f;
-printf("%ld", f);
-/*
-if (f < 10000000)
-{ printf("%ld", f);
-}  else if ((f > 10000000) && (f < 100000000000000))
+if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
+{
+hold1 = (bk1 + bk2) / LARGEST;
+hold2 = (bk1 + bk2) % LARGEST;
+hold3 = fr1 + fr2 + hold1;
+fr1 = fr2, fr2 = hold3;
+bk1 = bk2, bk2 = hold2;
+printf("%lu%010lu", fr2, bk2);
 }
 else
-{ f1 = f / 100000000000000;
-f2 = (f % 100000000000000) / 10000000;
-f3 = f % 10000000;
-printf("%ld", f1);
-printf("%ld", f2);
-printf("%ld", f3);
+{
+hold2 = bk1 + bk2;
+bk1 = bk2, bk2 = hold2;
+printf("%lu", bk2);
+}
+if (count != 97)
+printf(", ");
+}
+printf("\n");
+return (0);
+}
 } */
 if (i != 95)
 {
