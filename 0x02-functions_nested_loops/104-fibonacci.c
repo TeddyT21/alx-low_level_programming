@@ -9,7 +9,7 @@ int main(void)
 {
 int i;
 /* long int pf, af, f, f1, f2, f3;*/
-unsigned long f, pf, af ;
+unsigned double f, pf, af ;
 
 pf = 1;
 af = 2;
@@ -25,10 +25,6 @@ printf("%ld", f);
 if (f < 10000000)
 { printf("%ld", f);
 }  else if ((f > 10000000) && (f < 100000000000000))
-{  f2 = f / 10000000;
-f3 = f % 10000000;
-printf("%ld", f2);
-printf("%ld", f3);
 }
 else
 { f1 = f / 100000000000000;
