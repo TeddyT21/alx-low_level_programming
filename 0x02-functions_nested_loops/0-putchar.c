@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char T[10] = "Kedilmels\n";
+char T[10] = "BlenTeddy\n";
 int i = 0;
 
 for (i = 0; i < 10; i++)
