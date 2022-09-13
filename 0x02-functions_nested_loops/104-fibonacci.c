@@ -37,7 +37,7 @@ f2 = (f % 100000000000000) / 10000000;
 f3 = f % 10000000;
 printf("%ld", f1);
 printf("%ld", f2);
-printf("%ld, ", f3);
+printf("%ld", f3);
 }
 if (i != 95)
 {
