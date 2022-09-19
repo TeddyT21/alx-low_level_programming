@@ -1,12 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * mul - multiplies two integer .
- * @a: first number.
- * @b: second number.
- * Return: the multiplication of two numbers .
- */
-int mul(int a, int b)
+* print_numbers - print numbers from 0 to 9.
+*
+*/
+
+void print_numbers(void)
 {
-	return (a * b);
+int i;
+
+for (i = 0; i < 10; i++)
+{
+_putchar(i + '0');
+}
+_putchar('\n');
 }
