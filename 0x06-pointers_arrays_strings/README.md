@@ -1,4 +1,4 @@
-General
+		General Objectives of the Project
  ---=======================================
 	- What are pointers and how to use them
 	- What are arrays and how to use them
