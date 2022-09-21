@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string.
- * @s: string to use.
- * 
- * Return: string.
+ *cap_string - capitalizes all words of a string.
+ *@s: string to use.
+ *
+ *Return: string.
  */
+
 char *cap_string(char *s)
 {
 	int i = 1, j, check;
-	char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
+char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
 
 	if (s[0] > 96 && s[0] < 123)
 		s[0] -= 32;
+
 	while (s[i] != '\0')
 	{
 		if (s[i] > 96 && s[i] < 123)
@@ -34,5 +36,5 @@ char *cap_string(char *s)
 		}
 		i++;
 	}
-	return (s);
+return (s);
 }
