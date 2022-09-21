@@ -25,11 +25,11 @@ char *cap_string(char *s)
 			check = 1;
 		}
 		j++;
-	}
-	if (check == 1)
-	{
-		s[i] -= 32;
-	}
+		}
+		if (check == 1)
+		{
+			s[i] -= 32;
+		}
 	}
 	i++;
 	}
