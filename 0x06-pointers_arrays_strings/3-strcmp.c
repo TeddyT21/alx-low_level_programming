@@ -2,11 +2,10 @@
 
 /**
  * _strcmp - compare two strings.
- *@s1: string 1.
- *@s2: string 2.
- *Return: int.
+ * @s1: string 1.
+ * @s2: string 2.
+ * Return: int.
  */
-
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0, cmp = 0;
@@ -16,6 +15,5 @@ int _strcmp(char *s1, char *s2)
 		cmp = s1[i] - s2[i];
 		i++;
 	}
-
 	return (cmp);
 }
