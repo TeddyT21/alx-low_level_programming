@@ -53,4 +53,7 @@ else
 			else
 				printf("%c", b[i]);
 		}
-		printf("\n");	}	}	}
+		printf("\n");	
+	}
+}
+}
