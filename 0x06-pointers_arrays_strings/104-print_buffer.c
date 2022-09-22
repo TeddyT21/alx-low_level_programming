@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -19,15 +19,18 @@ void print_buffer(char *b, int size)
 				for (c = pi; c <= i ; c++)
 				{	printf("%.2x", b[c]);
 					if (c % 2 == 1)
-						printf(" ");	}
+						printf(" ");	
+				}
 				for (c = pi; c <= i ; c++)
 				{
 					if (b[c] < 32)
 						printf(".");
 					else
-						printf("%c", b[c]);	}
+						printf("%c", b[c]);	
+				}
 					printf("\n");
-					pi = i + 1;	}
+					pi = i + 1;	
+		}
 		if (pi < size - 1)
 		{	i -= 9;
 			printf("%.8x: ", i);
@@ -38,7 +41,8 @@ void print_buffer(char *b, int size)
 				else
 					printf("  ");
 				if (c % 2 == 1)
-					printf(" ");	}
+					printf(" ");	
+			}
 			for (; i < size ; i++)
 			{
 				if (b[i] < 32)
@@ -46,4 +50,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("%c", b[i]);
 			}
-			printf("\n");	}	}	}
+			printf("\n");	
+		}	
+	}	
+}
